@@ -1,6 +1,7 @@
 import React from 'react';
 import CardWidget from './CardWidget';
-
+import ItemListContainer from './ItemListContainer';
+import FotoCarrito from './imagenes/carrito.svg';
 
 
 export default function NavBar(){
@@ -16,9 +17,10 @@ export default function NavBar(){
                         <li> <a href="#">Servicios</a> </li>
                         <li> <a href="#">Contacto</a> </li>
                     </ul>
-                    <CardWidget />
                 </div>
+                <CardWidget imgSrc = {FotoCarrito} />
             </nav>
+            <ItemListContainer />
         </div>
     )
 }
