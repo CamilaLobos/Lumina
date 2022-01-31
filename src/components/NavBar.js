@@ -1,5 +1,7 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
+import CardWidget from './CardWidget';
+
+
 
 export default function NavBar(){
     return (
@@ -14,6 +16,7 @@ export default function NavBar(){
                         <li> <a href="#">Servicios</a> </li>
                         <li> <a href="#">Contacto</a> </li>
                     </ul>
+                    <CardWidget />
                 </div>
             </nav>
         </div>
