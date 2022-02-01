@@ -9,12 +9,13 @@
     background-color: rgb(222, 235, 247);
     display: flex;
 }
-h2{
+h1{
     width: 20%;
     margin: 1rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
     color: #00aa93;
+    font-size: 2rem;
 }
 .contenedorLogo {
     width : 40%;
