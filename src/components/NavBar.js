@@ -1,9 +1,12 @@
 import React from 'react';
 import CardWidget from './CardWidget.js';
 import './../NavBar.css';
+import ItemListContainer from './ItemListContainer.js';
 
 
-export default function NavBar(){
+
+
+export default function NavBar(ImagenCarrito){
     return (
         <div>
             <nav className='barraNavegacion' >
@@ -15,10 +18,11 @@ export default function NavBar(){
                         <li> <a href="#">Inicio</a> </li>
                         <li> <a href="#">Servicios</a> </li>
                         <li> <a href="#">Contacto</a> </li>
-                        <li> <CardWidget/> </li>
+                        <li> <CardWidget /> </li>
                     </ul>
                 </div>
             </nav>
+            <ItemListContainer />
         </div>
     )
 }

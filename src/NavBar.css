@@ -18,12 +18,12 @@ h1{
     font-size: 2rem;
 }
 .contenedorLogo {
-    width : 40%;
+    width : 30%;
     height : auto;
 }
 
 .contenedorLista{
-    width: 50%;
+    width: 60%;
     height: auto;
 
 }
@@ -35,5 +35,6 @@ h1{
     margin: 0 0.5rem;
 }
 li{
+    width: 5rem;
     list-style: none;
 }

@@ -1,4 +1,20 @@
-.fotoCarritoCompras{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgContainer{
+    width: 20rem;
+    height: 20rem;
+}
+img{
+    width: 85%;
+    height: 100%;
+
+}
+button{
     width: 20%;
     height: 20%;
+    display: flex;
+    background-color: #EFECEB;
 }
