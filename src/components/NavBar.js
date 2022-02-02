@@ -2,6 +2,7 @@ import React from 'react';
 import CardWidget from './CardWidget.js';
 import './../NavBar.css';
 import ItemListContainer from './ItemListContainer.js';
+import ItemCount from './ItemCount';
 
 
 
@@ -23,6 +24,7 @@ export default function NavBar(ImagenCarrito){
                 </div>
             </nav>
             <ItemListContainer />
+            <ItemCount />
         </div>
     )
 }

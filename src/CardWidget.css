@@ -5,7 +5,7 @@
 }
 .imgContainer{
     width: 20rem;
-    height: 20rem;
+    height: auto;
 }
 img{
     width: 85%;
@@ -14,7 +14,7 @@ img{
 }
 button{
     width: 20%;
-    height: 20%;
+    height: auto;
     display: flex;
     background-color: #EFECEB;
 }
