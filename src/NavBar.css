@@ -14,25 +14,28 @@ h1{
     margin: 1rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
-    color: #00aa93;
+    color: #484848;
     font-size: 2rem;
 }
 .contenedorLogo {
-    width : 30%;
+
     height : auto;
+    margin: 1.5rem 0 0 1.5rem;
 }
 
 .contenedorLista{
-    width: 60%;
+    width: 100%;
     height: auto;
 
 }
 .lista {
+    height: 100%;
     display: flex;
     justify-content: space-around;
     float: inline-end;
     text-decoration: none;
     margin: 0 0.5rem;
+    align-items: center;
 }
 li{
     width: 5rem;

@@ -1,12 +1,19 @@
 
 import NavBar from './components/NavBar';
-import './NavBar.css ';
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+
+      <header>
+        <NavBar />
+      </header>
+      <main>
+        <ItemListContainer greetings='¡Bienvenidos a Lumina!'/>
+      </main>
+
     </div>
   );
 }

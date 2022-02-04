@@ -1,19 +1,20 @@
 import React from 'react';
 import CardWidget from './CardWidget.js';
 import './../NavBar.css';
-import ItemListContainer from './ItemListContainer.js';
-import ItemCount from './ItemCount';
+import {GiQueenCrown} from 'react-icons/gi';
 
 
 
 
-export default function NavBar(ImagenCarrito){
+
+export default function NavBar(){
     return (
         <div>
             <nav className='barraNavegacion' >
                 <div className='contenedorLogo'>
-                    <h1>LUMINA</h1>
+                    <GiQueenCrown fontSize="30px"/>
                 </div>
+                <h1>LUMINA</h1>
                 <div className='contenedorLista'>
                     <ul className='lista'>
                         <li> <a href="#">Inicio</a> </li>
@@ -23,8 +24,6 @@ export default function NavBar(ImagenCarrito){
                     </ul>
                 </div>
             </nav>
-            <ItemListContainer />
-            <ItemCount />
         </div>
     )
 }
