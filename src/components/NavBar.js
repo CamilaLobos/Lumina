@@ -1,6 +1,6 @@
 import React from 'react';
-import CardWidget from './CardWidget.js';
-import './../NavBar.css';
+import CardWidget from './CardWidget';
+import './NavBar.css';
 import {GiQueenCrown} from 'react-icons/gi';
 
 

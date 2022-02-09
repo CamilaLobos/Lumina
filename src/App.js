@@ -11,7 +11,8 @@ function App() {
         <NavBar />
       </header>
       <main>
-        <ItemListContainer greetings='¡Bienvenidos a Lumina!'/>
+        <ItemListContainer
+        greetings = '¡Bienvenidos a Lumina!'/>
       </main>
 
     </div>
