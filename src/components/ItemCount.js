@@ -10,6 +10,7 @@ export default function ItemCount({inicio, onAdd}){
     function agregar(){
         if(itemCounter < stockCount){
             setItemCounter (itemCounter + 1);
+            setStockCount (stockCount - itemCounter);
 
         }else{
             alert('La cantidad seleccionada de productos no esta disponible.')
