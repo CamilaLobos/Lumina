@@ -1,4 +1,4 @@
-const products = [
+const items = [
     {
         id : 1,
         title : 'Camisa Flora',
@@ -25,14 +25,14 @@ const products = [
 const promesa = new Promise(function(resolve, reject){
 
     setTimeout(function(){
-        resolve(products);
+        resolve(items);
     }, 2000) //dos segundos
 });
 
-function getProducts(){
+function getItems(){
     return promesa;
 }
 
 export {
-    getProducts,
+    getItems,
 }

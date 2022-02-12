@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 
-import { getProducts } from './../api/api';
+import { getItems} from './../api/api';
 import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import './ItemListContainer.css';
@@ -9,14 +9,15 @@ import './ItemListContainer.css';
 
 export default function ItemListContainer({greetings}) {
 
-    const [products, setProducts] = useState([]);
+    const [itemList, setItemList] = useState([]);
 
     useEffect(() => {
-        getProducts().then(function(products){
-            console.log(products);
-            setProducts(products);
-        })
-    })
+        getItems().then((items) => {
+            setItemList(items);
+        }).catch((error) => {
+            console.log(error);
+        });
+    }, []);
 
     function agregarAlCarrito(itemCount){
         console.log(itemCount);
@@ -26,7 +27,11 @@ export default function ItemListContainer({greetings}) {
             <section>
                 <h1 className="greeting">{greetings}</h1>
             </section>
-            {products.length > 0 ? <ItemList products={products}/> : <p>Cargando...</p>}
+            {
+                itemList === 0 ?
+                <p>Cargando...</p> :
+                <ItemList items={itemList} />
+            }
 
             <div>
                 <ItemCount
