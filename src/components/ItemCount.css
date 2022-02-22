@@ -5,7 +5,7 @@
 
 .contenedorItemCount{
     width: 15rem;
-    height: 10rem;
+    height: 5rem;
     background-color: aliceblue;
     display: inline-flex;
     justify-content: space-around;
@@ -15,7 +15,7 @@
     width: 1rem;
     height: 1rem;
     flex-direction: column;
-    margin-top: 7.8rem;
+    margin-top: 2.8rem;
 }
 .agregaCarrito{
     width: 100%;
@@ -25,7 +25,7 @@
 .itemCounter{
     width: 4rem;
     height: 2rem;
-    margin: 7.7rem 0 0 3rem;
+    margin: 2.7rem 0 0 3rem;
 }
 .botonAgregar{
     width: 100%;

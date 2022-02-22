@@ -32,12 +32,10 @@ export default function ItemListContainer({greetings}) {
                 <p>Cargando...</p> :
                 <ItemList items={itemList} />
             }
+            <ItemCount
+            inicio={1}
+            onAdd={agregarAlCarrito} />
 
-            <div>
-                <ItemCount
-                inicio={1}
-                onAdd={agregarAlCarrito} />
-            </div>
 
         </div>
     )

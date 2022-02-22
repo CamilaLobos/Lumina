@@ -7,17 +7,18 @@
 
 import { useEffect, useState } from "react";
 import { getItems } from "../api/api";
+import ItemDetail from './ItemDetail';
 
 
 export default function ItemDetailContainer() {
-    const [prodEncontrado, setProdEncontrado]= useState(producto);
+    const [item, setItem]= useState();
 
     useEffect(() => {
-        getItems().then((item) => {
-            const producto = item.find((i) => i.id === 1);
+        getItems().then((items) => {
+            const item = items.find((i) => i.id === 1);
             //ese item lo guardo en un estado
-            setProdEncontrado(item);
-            console.log(producto);
+            setItem(item);
+            console.log(item);
         }).catch((error) => {
             console.log(error);
         });
@@ -25,7 +26,7 @@ export default function ItemDetailContainer() {
 
     return (
         <div>
-            
+            {!item ? <p>Cargando producto...</p> : <ItemDetail item={item} />}
         </div>
     )
 

@@ -2,21 +2,21 @@ const items = [
     {
         id : 1,
         title : 'Camisa Flora',
-        desciption : 'Camisa con deco floreada',
+        description : 'La camisa mas canchera ;)',
         price : 950,
         pictureUrl: 'https://www.cristobalcolon.com/fullaccess/item6374foto73463th.jpg'
     },
     {
         id : 2,
         title : 'Jean Mamba',
-        desciption : 'Jean negro con roturas',
+        description : 'Jean negro, el más cómodo de todo el condado',
         price : 1500,
         pictureUrl: 'https://www.cristobalcolon.com/fullaccess/item5777foto63978.jpg'
     },
     {
         id : 3,
         title : 'Campera Rocket',
-        desciption : 'Campera impermeable',
+        description : 'Campera impermeable, para ni preocuparte por el frío',
         price : 2500,
         pictureUrl: 'https://www.cristobalcolon.com/fullaccess/item17057foto78718th.jpg'
     }

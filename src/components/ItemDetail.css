@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.detalle-producto{
+    width: 50%;
+    height: 50%;
+    display: inline-flex;
+    border: 1px solid #e13602;
+}
+
+.img-item-detail{
+    width: 50%;
+    height: auto;
+    margin: 1rem;
+}
+.columna-detalle{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 1rem;
+}

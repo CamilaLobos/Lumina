@@ -1,6 +1,7 @@
 
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <main>
         <ItemListContainer
         greetings = '¡Bienvenidos a Lumina!'/>
+        <ItemDetailContainer />
       </main>
 
     </div>
