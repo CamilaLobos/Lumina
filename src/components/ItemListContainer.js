@@ -1,5 +1,6 @@
 import React from "react";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 import { getItems} from './../api/api';
 import ItemCount from './ItemCount';
@@ -10,14 +11,23 @@ import './ItemListContainer.css';
 export default function ItemListContainer({greetings}) {
 
     const [itemList, setItemList] = useState([]);
+    const {categoryName} = useParams();
+    console.log(categoryName);
 
     useEffect(() => {
         getItems().then((items) => {
-            setItemList(items);
+            if (!categoryName){
+                    setItemList(items)
+                }else{
+                    const itemsPorCategoria = items.filter((producto) => {
+                    return producto.category === categoryName
+                });
+                setItemList(itemsPorCategoria);
+            }
         }).catch((error) => {
             console.log(error);
         });
-    }, []);
+    }, [categoryName]);
 
     function agregarAlCarrito(itemCount){
         console.log(itemCount);

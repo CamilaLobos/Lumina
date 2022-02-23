@@ -7,17 +7,25 @@
     width: 50%;
     height: 50%;
     display: inline-flex;
-    border: 1px solid #e13602;
 }
 
 .img-item-detail{
     width: 50%;
     height: auto;
     margin: 1rem;
+    border: .5px solid #b6b6b6;
 }
 .columna-detalle{
     width: 50%;
     height: auto;
-    display: block;
     margin: 1rem;
+}
+
+.detail{
+    width: 100%;
+    height: auto;
+}
+button{
+    width: 100%;
+    height: 5rem;
 }
