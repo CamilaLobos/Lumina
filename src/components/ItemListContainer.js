@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { getItems} from './../api/api';
-import ItemCount from './ItemCount';
 import ItemList from './ItemList';
 import './ItemListContainer.css';
 
@@ -42,9 +41,6 @@ export default function ItemListContainer({greetings}) {
                 <p>Cargando...</p> :
                 <ItemList items={itemList} />
             }
-            <ItemCount
-            inicio={1}
-            onAdd={agregarAlCarrito} />
 
 
         </div>

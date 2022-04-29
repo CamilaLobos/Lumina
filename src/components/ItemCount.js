@@ -1,32 +1,26 @@
-import React , {useEffect, useState} from 'react';
+import React , { useState} from 'react';
 import './ItemCount.css';
 import {AiOutlinePlus, AiOutlineMinus} from 'react-icons/ai';
 
 
-export default function ItemCount({inicio, onAdd}){
+export default function ItemCount({inicio, stock, onAdd}){
     const [itemCounter, setItemCounter] = useState(inicio);
-    const [stockCount, setStockCount] = useState(10)
 
     function agregar(){
-        if(itemCounter < stockCount){
+        if(itemCounter < stock){
             setItemCounter (itemCounter + 1);
-            setStockCount (stockCount - itemCounter);
 
-        }else{
-            alert('La cantidad seleccionada de productos no esta disponible.')
-            setItemCounter(itemCounter);
         }
     }
     function quitar(){
         if(itemCounter > 0){
             setItemCounter (itemCounter - 1);
-        }else{
-            setItemCounter(itemCounter);
         }
     }
 
-    function agregarAlCarrito(){
-        onAdd(itemCounter);
+    function agregarAlCarrito(event){
+        console.log(event.target.value);
+        onAdd(event.target.value);
     };
 
 
